@@ -1,0 +1,222 @@
+body {
+  color: var(--wb-white);
+  /*background-color: var(--wb-black);*/
+  background-image: url(../../PoC_DrivePilot/dust_red.png);
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: left;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  /* scroll-behavior: smooth !important; */
+  -webkit-overflow-scrolling: touch;
+  section {
+    min-width: 100vw;
+    scroll-snap-align: start;
+    position: relative;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.8rem;
+  background-color: var(--wb-black);
+
+  padding: 0rem 5rem;
+  text-align: center;
+	
+  .logo {
+    text-decoration: none;
+    color: var(--wb-white);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    svg {
+      width: 3.875rem;
+      height: 3.875rem;
+    }
+  }
+  nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  .abstract {
+    padding: 3rem;
+    
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+	.abstract-image {
+      float: right;
+      margin-left: 20px;
+      width: 560px; // Set the width of the image
+      height: 315px; // Set the height of the image
+      max-width: 100%; // Ensure it's not larger than its container
+    }
+    .wb-text {
+      width: 82rem;
+	  font-size: 20px;
+    }
+  }
+
+  .banner {
+    object-fit: contain;
+    width: 100%;
+    height: 50rem;
+  }
+
+
+  .cards {
+    width: 100%;
+    padding: 7rem 11rem;
+	
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+	  overflow: hidden;
+	  background-color: #3b3838;
+	  /*background-image: linear-gradient(to right, #984a4a, #984a4a); /* COOL COLOR */
+	  border-radius: 25px; /* Rounded corners */
+      /*box-shadow: 0px 0px 1rem rgba(172, 74, 74, 0.5*);*/
+
+      .card-header {
+        width: 100%;
+        height: 28rem;
+        object-fit: cover;
+		background-color: #3b3838;
+		border: none;
+        /*object-position: calc(100% - 20%);*/
+      }
+     
+      }
+    }
+	
+	.widecard{
+	  display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+	  overflow: hidden;
+	  background-color: #3b3838;
+	  width: 100%;
+	  /*background-image: linear-gradient(to right, #984a4a, #984a4a); /* COOL COLOR */
+	  border-radius: 25px; /* Rounded corners */
+      /*box-shadow: 0px 0px 1rem rgba(172, 74, 74, 0.5*);*/
+
+      .widecard-header {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+		background-color: #3b3838;
+		border: 1px;
+        /*object-position: calc(100% - 20%);*/
+      }
+		
+	}
+  }
+}
+
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 4.4rem;
+  color: var(--wb-gray);
+  background-color: var(--wb-black);
+  border-top: 1px solid var(--wb-white);
+
+  padding: 0rem 5rem;
+  text-align: center;
+}
+
+
+
+
+.right-align-image {
+  float: right;
+  margin-left: 20px;
+  width: 560px;
+  height: 315px;
+}
+
+.rectangle {
+  width: calc(50% - 1rem); /* Slightly less than half the width of the container */
+  height: 300px; /* Adjust the height as needed */
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Light gradient with red and orange tones */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds some depth with a shadow */
+  margin: 1rem; /* Ensures there's space between the rectangles */
+}
+
+.rectangleCool {
+  flex: 0 0 calc(50% - 1rem); /* Do not grow or shrink, width slightly less than half */
+  height: 300px; /* Adjust the height as needed */
+  background-image: linear-gradient(to right, #ed6352, #dd3f3a); /* Light gradient with red and orange tones */
+  border-radius: 15px; /* Rounded corners */
+  margin: 0.5rem; /* Half the space on each side to add up to 1rem total */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+  
+}
+
+.rectangleCool iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Removes the default iframe border */
+}
+
+
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Optional: Cover the entire viewport without losing aspect ratio */
+  }
+  
+    .classic-text {
+    font-family: 'Times New Roman', Times, serif; /* Classic font */
+    font-size: 26px; /* Medium size */
+    color: white; /* White text */
+    background: black; /* Background color for contrast */
+    padding: 10px; /* Some padding around the text */
+    /* Add any additional styling you want here */
+  }
+  #text-section {
+    padding: 10px; /* Some padding around the text */
+    white-space: pre-wrap; /* Preserves whitespace and wraps text */
+    word-wrap: break-word; /* Ensures long words do not break the layout */
+  }
